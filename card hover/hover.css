@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff7c;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+:root{
+    --img1: url(arb.jpg);
+    --img2: url(camino.jpg);
+    --img3: url(palm.jpg);
+}
+.card{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--img1);
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgba(3, 32, 51, .8);
+    margin: 20px;
+}
+.card1{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--img2);
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgba(3, 32, 51, .8);
+    margin: 20px;
+}
+.card2{
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background: var(--img3);
+    background-size: cover;
+    box-shadow: 3px 3px 5px rgba(3, 32, 51, .8);
+    margin: 20px;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: .5s;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(235, 219, 219);
+    font-weight: 500;
+}
+.content h2, a {
+    color: #fff;
+    margin: 10px 0;
+}
+
+.card:hover .content{
+    opacity: 1;
+}
+.card1:hover .content{
+    opacity: 1;
+}
+.card2:hover .content{
+    opacity: 1;
+}
